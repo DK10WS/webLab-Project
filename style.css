@@ -21,7 +21,7 @@ button{
 #calculator{
   font-family: Arial, sans-serif;
   background-color: hsl(0,0%,15%);
-  border-radius: 50px;
+  border-radius: 20px;
   max-width: 500px;
   overflow: hidden;
 }
@@ -30,7 +30,7 @@ button{
   width: 100%;
   padding:20px;
   font-size: 5rem;
-  text-align: right;
+  text-align: left;
   border: none;
   background-color: hsl(0,0%,20%);
 }

@@ -3,7 +3,7 @@ const display = document.getElementById("display");
 function add(input){
     display.value += input;
 }
-function clearDisplay(){
+function ClearDisplay(){
     display.value = "";
 }
 function calculate(){
@@ -18,3 +18,5 @@ function calculate(){
         display.value = "Error";
     }
 }
+
+  
