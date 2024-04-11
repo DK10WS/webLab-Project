@@ -8,7 +8,7 @@ function ClearDisplay(){
 }
 function calculate(){
     if(display.value==707){
-    window.location.href = "login.html";
+    window.location.href = "index.php";
 
   }
 
