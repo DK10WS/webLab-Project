@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
   <head>
     <title>Calculator</title>
@@ -28,7 +27,34 @@
   <button onclick="ClearDisplay()" class="operator-button">C</button>
     </div>
           </div>
-    <script src="app.js"></script>
+    <script >
+
+
+const display = document.getElementById("display");
+
+function add(input){
+    display.value += input;
+}
+function ClearDisplay(){
+    display.value = "";
+}
+function calculate(){
+    if(display.value=== "707"){
+    window.location.href = "login.php";
+  return;
+  }
+
+    try{
+        display.value = eval(display.value);
+    }
+    catch(error){
+        display.value = "Error";
+    }
+}
+
+
+
+    </script>
 
   </body>
 </html>

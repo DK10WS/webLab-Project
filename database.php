@@ -16,7 +16,6 @@ catch(mysqi_sql_exception){
 
 
 if($conn){
-  echo "Hello there";
 }
 
 

@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO passwords (username, website, password) VALUES ('$username', '$website', '$password')";
   if (mysqli_query($conn, $sql)) {
 
-        header("Location: index.php");
+        header("Location: password.php");
         echo "New password added successfully.";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['delete'])) {
     $sql = "DELETE FROM passwords WHERE id = '$delete_id'";
   if (mysqli_query($conn, $sql)) {
 
-        header("Location: index.php");
+        header("Location: password.php");
         echo "Password deleted successfully.";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($conn);
